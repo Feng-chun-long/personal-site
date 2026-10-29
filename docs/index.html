@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Long · 个人主页</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- 导航栏（由 JS 根据 data.nav 渲染） -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="brand" id="brand">Long<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks"></ul>
+    </div>
+  </nav>
+
+  <!-- Hero 首屏 -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="avatar-wrap">
+        <div class="avatar" id="heroAvatar"></div>
+        <span class="status" id="heroStatus"></span>
+      </div>
+      <h1 class="name" id="heroName"></h1>
+      <p class="tagline" id="heroTagline"></p>
+      <p class="hero-desc" id="heroDesc"></p>
+      <div class="hero-actions">
+        <a href="#projects" class="cta cta-primary">查看作品 ↓</a>
+        <a href="#contact" class="cta cta-secondary">联系我</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数据概览 -->
+  <section id="numbers" class="section section-alt">
+    <div class="container">
+      <div class="numbers-grid" id="numbersGrid"></div>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-main">
+          <h2 class="section-title">关于我</h2>
+          <div class="about-text" id="aboutText"></div>
+          <div class="about-tags" id="aboutTags"></div>
+        </div>
+        <aside class="about-card">
+          <h3>快速信息</h3>
+          <ul class="info-list" id="infoList"></ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技能 -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">技能与工具</h2>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- 项目 -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">我的项目</h2>
+      <div class="projects-list" id="projectsList"></div>
+    </div>
+  </section>
+
+  <!-- 获奖 -->
+  <section id="awards" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">获奖记录</h2>
+      <div class="awards-by-year" id="awardsByYear"></div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section id="contact" class="section section-alt2">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-main">
+          <h2 class="section-title">联系我</h2>
+          <p class="contact-desc" id="contactDesc"></p>
+          <div class="contact-list" id="contactList"></div>
+        </div>
+        <div class="contact-quote">
+          <span class="quote-mark">"</span>
+          <p id="contactQuote"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container footer-inner">
+      <p id="footerText"></p>
+      <a href="#hero" class="back-to-top">↑ 回到顶部</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
